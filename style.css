@@ -1,0 +1,370 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --ff-heading: 'Mulish', 'cursive' ;
+
+  --hue: 240;
+  --bg-primary: hsl(283, 47%, 97%, 1);
+  --bg-secondary: linear-gradient (hsla(242, 50%, 38%, 1) 
+  hsla(244, 38%, 28%, 1));
+   
+  --fc-primary: hsla(320, 69%, 42%, 1);
+  --fc-secondary: hsla(244, 38%, 28%, 1);
+  --fc-secondary-dark: hsla(0, 0%, 100%, 1);
+  
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--bg-primary);
+  font-family: var(--ff-heading);
+  min-width: 430px;
+  } 
+
+#planets-man{
+  /* margin: 0 3.3rem; */
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.text{
+  margin:5.3rem 4.6rem 0 6.30rem;
+}
+
+
+header h1{
+  font-weight: 900;
+  font-size: 3.2rem;
+  color: var(--fc-primary);
+}
+
+header p {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--fc-secondary);
+}
+
+.text img{
+  margin: 3.5rem 15.5rem 9.3rem 11.5rem;
+  align-items: center;
+}
+
+/* main{
+  max-width: 43.0rem;
+} */
+
+main{
+  /* display: grid;
+  position: relative;
+  justify-items: center; */
+  
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  padding: 5.2rem 3.9rem;
+ gap:2rem;
+}
+
+
+.card1 h1, .card0 h1, .card2 h1{
+  font-size: 3.0rem;
+  color: var(--fc-primary);
+  }
+
+.card1 p, .card0 p, .card2 p{
+  font-size: 1.6rem;
+  color: var(--fc-secondary); 
+}
+
+main .card1, main .card2, main .card0{
+  background-color: hsla(0, 0%, 100%, 1);
+  border-radius: 2rem ;
+  width: auto;
+  height: auto;
+
+  margin-bottom: 4.0rem;
+  padding: 3.2rem 2.3rem 2rem;
+  flex-direction: column;
+}
+
+@media(min-width: 700px){
+  
+   header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+  
+  .text{
+    margin: 20rem 10rem 10rem 20rem;
+  }
+  
+  .text img{
+    margin: 10rem 52.3rem 10rem 0;
+  }
+  
+  header h1{
+    font-weight: 900;
+    font-size: 5.9rem;
+    color: var(--fc-primary);
+  }
+  
+  header p {
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: var(--fc-secondary);
+  }
+  
+  
+  main{
+    display: grid;
+    position: relative;
+    justify-items: center;
+  
+    margin-top: 10rem ;
+    /* margin-top: 10.4rem; */
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  
+    padding: 6.4rem 11.1rem;
+  }
+  
+  
+  .card1 h1, .card0 h1, .card2 h1{
+    font-size: 4.0rem;
+    margin: 4rem 0 2.4rem 0 ;
+  }
+  
+  .card1 p, .card0 p, .card2 p{
+    font-size: 2.0rem;
+  }
+  
+  main .card1, main .card2, main .card0{
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: 2.4rem ;
+    width: 36.6rem;
+    height: 44.8rem;
+    word-break: break-all;
+    
+    padding: 3.2rem 2.3rem ;
+    flex-direction: column;
+  }
+  
+  
+  @media(min-width:700px){
+    main{
+      grid-template-areas: "A B C";
+    }
+      
+        main div:nth-child(1){
+        grid-area: A;
+       }
+  
+       main div:nth-child(2){
+        grid-area: B;
+       }
+  
+       main div:nth-child(3){
+        grid-area: C;
+       }
+  }
+  
+     
+  fieldset{
+    border: none;
+    padding: 10.9rem;
+    
+    display: grid;
+    justify-items: start;
+    
+  }
+  
+  fieldset legend{
+    font-weight: 900;
+    font-size: 4.2rem;
+    
+    padding-top: 9.5rem ;
+    color: var(--fc-primary);
+  }
+  
+  input[type='email']{
+    background-image: url(images/Vector\ \(1\).png);
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    padding: 2rem ;
+  }
+  
+  input[type='text']{
+    background-image: url(images/Vector.png);
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    padding: 2rem ;
+  }
+  
+  .input-wrapper label{
+    font-size: 1.6rem;
+    color:var(--fc-secondary);
+   }
+  
+   /* escreva sua mensagem */
+ 
+  
+
+  .button{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: hsla(283, 47%, 97%, 1);
+    border: none;
+    text-align: center;
+  
+    padding: 1.1rem 1.6rem;
+    border-radius: 2rem;
+      
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  }
+  
+  
+  footer{
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    height: 78px; 
+  }
+  
+  footer h2{
+    color: var(--fc-secondary-dark);
+    font-size: 2rem;
+    font-weight: 600;
+    
+    text-align: center;
+  
+    padding: 3.2rem 1.6rem 0;
+  }
+
+  form{
+    
+    border-radius: 1.6rem ;
+      
+    display: flex;
+    /* justify-content: space-between; */
+
+    background-color: #FFFFFF;
+
+    background-image: url(images/image\ 11976.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+}
+
+
+
+
+
+ form{
+    border-radius: 1.6rem ;
+      
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #FFFFFF;
+}
+
+
+fieldset{
+  border: none;
+  padding: 4rem;
+  
+  display: grid;
+  justify-items: start;
+  
+}
+
+fieldset legend{
+  font-weight: 900;
+  font-size: 3.2rem;
+  
+  padding-top: 7.8rem ;
+  color: var(--fc-primary);
+}
+
+input[type='email']{
+  background-image: url(images/Vector\ \(1\).png);
+  background-position: 1rem;
+  background-repeat: no-repeat;
+  padding: 2rem ;
+}
+
+input[type='text']{
+  background-image: url(images/Vector.png);
+  background-position: 1rem;
+  background-repeat: no-repeat;
+  padding: 2rem ;
+}
+
+/* .input-wrapper label{
+  font-size: 1.6rem;
+  color:var(--fc-secondary);
+ } */
+
+ 
+ .input-wrapper input, 
+ .input-wrapper select {
+   border: 1.5px solid hsla(244, 38%, 28%, 1);
+   border-radius: 1.6rem;
+   
+   width: 34.8rem;
+   height: 4.8rem;
+   
+   margin-top: 2rem;
+   
+   padding: 0 2.4rem;
+   padding-left: 4rem;
+   font-size: 1.6rem;
+  }
+
+  /* escreva sua mensagem */
+ .input-wrapper textarea{
+   font-size: 1.6rem;
+   color: hsla(244, 38%, 28%, 1);
+ 
+  margin-top: 2rem;
+  gap: 1rem;
+  border: 1.5px solid hsla(244, 38%, 28%, 1);
+  padding: 1.2rem 1.6rem 1.6rem;
+  width: 34.8rem;
+  height: 12.6rem;
+  border-radius: 1.6rem;
+ }
+  
+.button{
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: hsla(283, 47%, 97%, 1);
+  border: none;
+  text-align: center;
+
+  padding: 1.1rem 1.6rem;
+  border-radius: 1.6rem;
+    
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+
+footer{
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  height: 7.8rem; 
+  /* width: 43.0rem; */
+}
+
+footer h2{
+  color: var(--fc-secondary-dark);
+  font-size: 2rem;
+  font-weight: 600;
+  
+  text-align: center;
+
+  padding: 3.2rem 1.6rem 0;
+}
